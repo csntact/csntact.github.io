@@ -1,0 +1,15 @@
+@font-face{
+    font-family: "RockSalt";
+    src: url("fonts\rocksalt.ttf");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
+td{
+    vertical-align: text-top;
+    padding-bottom: 20px;
+}
+li{
+    font-style: italic;
+}
+

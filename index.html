@@ -4,47 +4,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Egy szuper oldal</title>
+    <link rel="stylesheet" href="lib\bootstrap-4.5.0-dist\bootstrap-4.5.0-dist\css\bootstrap.min.css">
+    <title> Csikós Nándor</title>
+    <link rel="icon" href="img\earth.png" type="image/png">
+    <link rel="stylesheet" href="css\home.css">
 </head>
 
 <body>
-    <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/pages/products.html">Products</a></li>
-        <li><a href="/pages/orders.html">Orders</a></li>
-        <li><a href="/about.html">About</a></li>
-    </ul>
 
-    <h1>Fantastic burger</h1>
-    <ul>
-        <li>Meet lover
-            <ul>
-                <li>Beef</li>
-                <li>Pork</li>
-                <li>Turkey</li>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 80%; margin: auto;">
+        <a id="navbar-brand" class="navbar-brand" href="/index.html">Csikós Nándor</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul id=menu-ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/index.html"> <b>Életrajz</b> </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/publication.html">Publikációk</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/research.html">Kutatás</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/teaching.html">Oktatás</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact.html">Kapcsolat</a>
+                </li>
             </ul>
+        </div>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Keresés" aria-label="Keresés">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Keresés</button>
+        </form>
+    </nav>
+    <div id="container" style="width: 80%; margin: auto;">
+        <div style="padding: 50px 0px 0px; float: left;">
+            <img src="img\profil1.jpg" alt="profil" width="200px">
+        </div>
+        <div style="margin-left: 230px; margin-right: 200px; padding-top: 50px">
+            <h3 style="padding-bottom: 20px;">Szakmai önéletrajz</h3>
+            <h4 style="padding-bottom: 10px;">Munkahelyek</h4>
 
-        </li>
+            <table>
+                <thead>
+                    <th style="width: 17%;"></th>
+                    <th style="width: auto;"></th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2017.09.01. - folyamatban</td>
+                        <td>SZTE Földtudományok Doktori Iskola, Doktorandusz</td>
+                    </tr>
+                    <tr>
+                        <td>2018.09.01. – 2018.11.30.</td>
+                        <td>Kutató a Christian Albrechts Universität zu Kiel Zentrum für
+                            Geoinformation osztályán</td>
+                    </tr>
+                    <tr>
+                        <td>2016.08.15. –2017.07.19.</td>
+                        <td>Kutató a Christian Albrechts Universität zu Kiel Zentrum für
+                            Geoinformation osztályán
+                            <p>Deutsche Bundesstiftung Umwelt (DBU) ösztöndíj program,
+                                Umweltauswirkungen des Energiepflanzenanbaus für
+                                Biogasanlagen am Beispiel von Schleswig-Holstein</p>
+                            <p>Feladatok:</p>
+                            <ul>
+                                <li>
+                                    Saját kutatás kivitelezése angol, illetve német nyelven
+                                </li>
+                                <li>
+                                    Geoinformatikai módszerekkel térképek, statisztikák, kimutatások készítése vektoros, raszteres és statisztikai adatok alapján
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2015.08.03 –2015.08.28</td>
+                        <td>Szakmai gyakorlat a Geodezia Zrt. Szegedi osztályán</td>
+                    </tr>
+                    <tr>
+                        <td>2013.06.19. – 2013.07.30.</td>
+                        <td>Szakmai gyakorlat a Geocode Bt-nél Szegeden</td>
+                    </tr>
+                </tbody>
 
-        <li>Vegetarian</li>
-        <li>Piedone</li>
-    </ul>
-    <h2>Steps of order</h2>
-    <ol>
-        <li>Choose a burger</li>
-        <li>Buy it</li>
-        <li>Add your address</li>
-        <li>Eat</li>
-    </ol>
+            </table>
 
-    <a href="https://www.famousszeged.hu/termek/smokey-bbq-burger/">
-        Smokey BBQ burger
-    </a>
+            <h4 style="padding-top: 10px; padding-bottom: 10px;">Felsőfokú tanulmányok</h4>
+            <table>
+                <thead>
+                    <th style="width: 20%;"></th>
+                    <th style="width: auto;"></th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2014 - 2016</td>
+                        <td>Szegedi Tudományegyetem, Geográfus MSc szak, Geoinformatika szakirány</td>
+                    </tr>
+                    <tr>
+                        <td>2011 - 2014</td>
+                        <td>Szegedi Tudományegyetem, Geografus BSc szak,
+                            Geoinformatika szakirány</td>
+                    </tr>
+                    
+                </tbody>
 
-    <a href="pages/orders.html">Orders</a>
-    <a target="blank" href="https://www.famousszeged.hu/termek/smokey-bbq-burger/">
-        <img width="56" src="img/burger.jpg" alt="BBQ Burger">
-    </a>
+        </div>
+
+    </div>
+
+
 
 </body>
 
