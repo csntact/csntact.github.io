@@ -6,22 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="lib\bootstrap-4.5.0-dist\bootstrap-4.5.0-dist\css\bootstrap.min.css">
     <link rel="stylesheet" href="lib\bootstrap-4.5.0-dist\bootstrap-4.5.0-dist\js\bootstrap.min.js">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
     <title> Csikós Nándor</title>
     <link rel="icon" href="img\earth.png" type="image/png">
     <link rel="stylesheet" href="css\home.css">
 </head>
 
 <body>
+    <!-- <div style="width: 100%; background-color: whitesmoke;"> -->
 
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light" style="width: 80%; margin: auto;">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light"
+        style="width: 100%; margin: auto; background-color: whitesmoke; border-bottom: solid lightblue;">
         <a id="navbar-brand" class="navbar-brand" href="/index.html">Csikós Nándor</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button> 
+        </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-left: 40px;">
             <ul id=menu-ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="/index.html"> <b>Életrajz</b> </a>
@@ -38,30 +41,42 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/contact.html">Kapcsolat</a>
                 </li>
+
             </ul>
         </div>
-        <div><a href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" class="fa fa-facebook"></a>
-        </div>
+        <a href="https://www.researchgate.net/profile/Nandor_Csikos2" style="padding-right: 10px;" target="_blank"><i
+                class="fab fa-researchgate" style="font-size: 30px; color: lightseagreen;">
+                ResearchGate</i></a>
+        <a href="https://www.facebook.com/nandor.csikos" style="padding-right: 10px;" target="_blank"><i
+                class="fab fa-facebook" style="font-size: 30px; color: rgb(65, 65, 199);"></i></a>
+        <a href="https://www.instagram.com/csikosnandor/" style="padding-right: 10px;" target="_blank"><i
+                class="fab fa-instagram" style="font-size: 30px; color: darkred;"></i></a>
+        <a href="https://www.linkedin.com/in/n%C3%A1ndor-csik%C3%B3s-388756152/" style="padding-right: 10px;"
+            target="_blank"><i class="fab fa-linkedin" style="font-size: 30px; color: steelblue;"></i></a>
+
     </nav>
-    <div id="container" style="width: 90%; margin-left: auto;">
-        
-        <div style="margin: 10px; float: left; padding-left: 20px; position: fixed;">
+    </div>
+    <div id="container" style="width: 100%; margin: auto; background-color:#e6f7ff; ">
+
+        <div id="content" style="margin: 10px; float: left; padding: 50px 0px 0px 20px; position: fixed;">
             <h4>
                 Tartalom
             </h4>
-                <p><a href="#jobs"> Munkahelyek</a></p>
-                <p><a href="#studies"> Tanulmányok</a></p>
-                <p><a href="#language"> Nyelvtudás</a></p>
-                <p><a href="#grants"> Ösztöndíjak</a></p>
-                <p><a href="#it"> IT ismeretek</a></p>
-            
+            <p><a href="#jobs"> Munkahelyek</a></p>
+            <p><a href="#studies"> Tanulmányok</a></p>
+            <p><a href="#language"> Nyelvtudás</a></p>
+            <p><a href="#grants"> Ösztöndíjak</a></p>
+            <p><a href="#it"> IT ismeretek</a></p>
+
         </div>
-        <div style=" margin: 50px 200px 10px 200px; padding: 10px 0px 0px 10px;background-color: whitesmoke;">
-            <div style="margin: 10px; float: right;">
+        <div
+            style=" margin: 0px 200px 10px 200px; padding: 50px 0px 0px 10px;background-color: #e6f7ff;border-left: solid lightblue;">
+            <div style="padding: 15px; float: right; background-color: lightsteelblue; box-shadow:5px 4px lightgrey;">
                 <img src="img\profil1.jpg" alt="profil" width="150px">
             </div>
-            <h3 style="padding-bottom: 20px;">Szakmai önéletrajz</h3>
-            <h4 id="jobs" style="padding-bottom: 10px;">Munkahelyek</h4>
+
+            <h3 id="cv" style="padding-bottom: 20px;">Szakmai önéletrajz</h3>
+            <h4 id="jobs" style="padding: 10px 0px 10px 10px; background-color: lightsteelblue;">Munkahelyek</h4>
 
             <table>
                 <thead>
@@ -70,16 +85,16 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>2017.09.01. - folyamatban</td>
+                        <td class="first">2017.09.01. - folyamatban</td>
                         <td>SZTE Földtudományok Doktori Iskola, Doktorandusz</td>
                     </tr>
                     <tr>
-                        <td>2018.09.01. – 2018.11.30.</td>
+                        <td class="first">2018.09.01. – 2018.11.30.</td>
                         <td>Kutató a Christian Albrechts Universität zu Kiel Zentrum für
                             Geoinformation osztályán</td>
                     </tr>
                     <tr>
-                        <td>2016.08.15. –2017.07.19.</td>
+                        <td class="first">2016.08.15. –2017.07.19.</td>
                         <td>Kutató a Christian Albrechts Universität zu Kiel Zentrum für
                             Geoinformation osztályán
                             <p>Deutsche Bundesstiftung Umwelt (DBU) ösztöndíj program,
@@ -98,18 +113,19 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>2015.08.03 –2015.08.28</td>
+                        <td class="first">2015.08.03 –2015.08.28</td>
                         <td>Szakmai gyakorlat a Geodezia Zrt. Szegedi osztályán</td>
                     </tr>
                     <tr>
-                        <td>2013.06.19. – 2013.07.30.</td>
+                        <td class="first">2013.06.19. – 2013.07.30.</td>
                         <td>Szakmai gyakorlat a Geocode Bt-nél Szegeden</td>
                     </tr>
                 </tbody>
 
             </table>
 
-            <h4 id="studies" style="padding-top: 10px; padding-bottom: 10px;">Felsőfokú tanulmányok</h4>
+            <h4 id="studies" style="padding: 10px 0px 10px 10px; background-color: lightsteelblue;">Felsőfokú
+                tanulmányok</h4>
             <table>
                 <thead>
                     <th style="width: 27%;"></th>
@@ -117,11 +133,11 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>2014 - 2016</td>
+                        <td class="first">2014 - 2016</td>
                         <td>Szegedi Tudományegyetem, Geográfus MSc szak, Geoinformatika szakirány</td>
                     </tr>
                     <tr>
-                        <td>2011 - 2014</td>
+                        <td class="first">2011 - 2014</td>
                         <td>Szegedi Tudományegyetem, Geografus BSc szak,
                             Geoinformatika szakirány</td>
                     </tr>
@@ -129,7 +145,7 @@
                 </tbody>
             </table>
 
-            <h4 id="language" style="padding-top: 10px; padding-bottom: 10px;">Nyelvtudás</h4>
+            <h4 id="language" style="padding: 10px 0px 10px 10px; background-color: lightsteelblue;">Nyelvtudás</h4>
             <table>
                 <thead>
                     <th style="width: 25%;"></th>
@@ -137,7 +153,7 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Angol</td>
+                        <td class="first">Angol</td>
                         <td>
                             <ul> Készségek:
                                 <li>
@@ -150,7 +166,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>Olasz</td>
+                        <td class="first">Olasz</td>
                         <td>
                             <ul> Készségek:
                                 <li>
@@ -163,7 +179,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>Német</td>
+                        <td class="first">Német</td>
                         <td>
                             <ul> Készségek:
                                 <li>
@@ -178,18 +194,18 @@
 
                 </tbody>
             </table>
-            <h4 id="grants" style="padding-top: 10px; padding-bottom: 10px;">Ösztöndíjak</h4>
+            <h4 id="grants" style="padding: 10px 0px 10px 10px; background-color: lightsteelblue;">Ösztöndíjak</h4>
             <table>
                 <thead>
                     <th style="width: 18%;"></th>
                     <th style="width: auto;">Hazai</th>
-                    <th >Nemzetközi</th>
+                    <th>Nemzetközi</th>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Elnyert ösztöndíjak</td>
+                        <td class="first">Elnyert ösztöndíjak</td>
                         <td>
-                            <ul> 
+                            <ul>
                                 <li>
                                     Köztársasági ösztöndíj 2015/2016-os tanév
                                 </li>
@@ -200,27 +216,32 @@
                                     Új Nemzeti Kiválósági Program, Doktorandusz ösztöndíj, 2019/ 5 hónap
                                 </li>
                                 <li>
-                                    A tudomány támogatásáért a Dél-Alföldön alapítvány ösztöndíj III. helyezés pályamunkámmal.
+                                    A tudomány támogatásáért a Dél-Alföldön alapítvány ösztöndíj III. helyezés
+                                    pályamunkámmal.
                                 </li>
                             </ul>
                         </td>
                         <td>
-                            <ul> 
+                            <ul>
                                 <li>
-                                    Német Környezetvédelmi Szövetségi Alapítvány (Deautsche Bundesstiftung Umwelt, DBU) kutató ösztöndíja Németországba, 11 hónap 2016/2017
+                                    Német Környezetvédelmi Szövetségi Alapítvány (Deautsche Bundesstiftung Umwelt, DBU)
+                                    kutató ösztöndíja Németországba, 11 hónap 2016/2017
                                 </li>
                                 <li>
-                                    Német Környezetvédelmi Szövetségi Alapítvány (Deautsche Bundesstiftung Umwelt, DBU) kutatói ösztöndíja Németországba, 3 hónap 2018. Szeptember 1. - November 31.
+                                    Német Környezetvédelmi Szövetségi Alapítvány (Deautsche Bundesstiftung Umwelt, DBU)
+                                    kutatói ösztöndíja Németországba, 3 hónap 2018. Szeptember 1. - November 31.
                                 </li>
                                 <li>
-                                    Német Környezetvédelmi Szövetségi Alapítvány (Deautsche Bundesstiftung Umwelt, DBU) Reisestipendim, 7 nap
+                                    Német Környezetvédelmi Szövetségi Alapítvány (Deautsche Bundesstiftung Umwelt, DBU)
+                                    Reisestipendim, 7 nap
                                 </li>
                             </ul>
                         </td>
                     </tr>
                 </tbody>
             </table>
-            <h4 id="it" style="padding-top: 10px; padding-bottom: 10px;">Számításteknikai ismeretek</h4>
+            <h4 id="it" style="padding: 10px 0px 10px 10px; background-color: lightsteelblue;">Számításteknikai
+                ismeretek</h4>
             <table>
                 <thead>
                     <th style="width: 27%;"></th>
@@ -229,7 +250,7 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Felhasználói szintű</td>
+                        <td class="first">Felhasználói szintű</td>
                         <td>
                             <ul> Microsoft ismeretek
                                 <li>
@@ -258,7 +279,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>Szoftver ismeretek</td>
+                        <td class="first">Szoftver ismeretek</td>
                         <td>
                             <ul> Geoinformatikai szoftverek
                                 <li>
@@ -286,10 +307,14 @@
                             </ul>
                         </td>
                     </tr>
-        </div>
-
+                </tbody>
+            </table>
+        <a href="#container" style="position: fixed; bottom: 2%; right: 2%;"><i class="fas fa-arrow-circle-up" style="font-size: 30px; color: lightseagreen;"></i>
+        </a>
     </div>
 
+        
+    </div>
 
 
 </body>
