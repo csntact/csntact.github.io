@@ -13,3 +13,15 @@ li{
     font-style: italic;
 }
 
+ul{
+    list-style: circle;
+}
+
+th{
+    text-align: center;
+}
+
+a{
+    font-style: italic;
+    color: black;
+}

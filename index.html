@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="lib\bootstrap-4.5.0-dist\bootstrap-4.5.0-dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="lib\bootstrap-4.5.0-dist\bootstrap-4.5.0-dist\js\bootstrap.min.js">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title> Csikós Nándor</title>
     <link rel="icon" href="img\earth.png" type="image/png">
     <link rel="stylesheet" href="css\home.css">
@@ -12,12 +14,12 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 80%; margin: auto;">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light" style="width: 80%; margin: auto;">
         <a id="navbar-brand" class="navbar-brand" href="/index.html">Csikós Nándor</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button>
+        </button> 
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul id=menu-ul class="navbar-nav mr-auto">
@@ -38,22 +40,32 @@
                 </li>
             </ul>
         </div>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Keresés" aria-label="Keresés">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Keresés</button>
-        </form>
-    </nav>
-    <div id="container" style="width: 80%; margin: auto;">
-        <div style="padding: 50px 0px 0px; float: left;">
-            <img src="img\profil1.jpg" alt="profil" width="200px">
+        <div><a href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" class="fa fa-facebook"></a>
         </div>
-        <div style="margin-left: 230px; margin-right: 200px; padding-top: 50px">
+    </nav>
+    <div id="container" style="width: 90%; margin-left: auto;">
+        
+        <div style="margin: 10px; float: left; padding-left: 20px; position: fixed;">
+            <h4>
+                Tartalom
+            </h4>
+                <p><a href="#jobs"> Munkahelyek</a></p>
+                <p><a href="#studies"> Tanulmányok</a></p>
+                <p><a href="#language"> Nyelvtudás</a></p>
+                <p><a href="#grants"> Ösztöndíjak</a></p>
+                <p><a href="#it"> IT ismeretek</a></p>
+            
+        </div>
+        <div style=" margin: 50px 200px 10px 200px; padding: 10px 0px 0px 10px;background-color: whitesmoke;">
+            <div style="margin: 10px; float: right;">
+                <img src="img\profil1.jpg" alt="profil" width="150px">
+            </div>
             <h3 style="padding-bottom: 20px;">Szakmai önéletrajz</h3>
-            <h4 style="padding-bottom: 10px;">Munkahelyek</h4>
+            <h4 id="jobs" style="padding-bottom: 10px;">Munkahelyek</h4>
 
             <table>
                 <thead>
-                    <th style="width: 17%;"></th>
+                    <th style="width: 25%;"></th>
                     <th style="width: auto;"></th>
                 </thead>
                 <tbody>
@@ -79,7 +91,8 @@
                                     Saját kutatás kivitelezése angol, illetve német nyelven
                                 </li>
                                 <li>
-                                    Geoinformatikai módszerekkel térképek, statisztikák, kimutatások készítése vektoros, raszteres és statisztikai adatok alapján
+                                    Geoinformatikai módszerekkel térképek, statisztikák, kimutatások készítése vektoros,
+                                    raszteres és statisztikai adatok alapján
                                 </li>
                             </ul>
                         </td>
@@ -96,10 +109,10 @@
 
             </table>
 
-            <h4 style="padding-top: 10px; padding-bottom: 10px;">Felsőfokú tanulmányok</h4>
+            <h4 id="studies" style="padding-top: 10px; padding-bottom: 10px;">Felsőfokú tanulmányok</h4>
             <table>
                 <thead>
-                    <th style="width: 20%;"></th>
+                    <th style="width: 27%;"></th>
                     <th style="width: auto;"></th>
                 </thead>
                 <tbody>
@@ -112,9 +125,167 @@
                         <td>Szegedi Tudományegyetem, Geografus BSc szak,
                             Geoinformatika szakirány</td>
                     </tr>
-                    
-                </tbody>
 
+                </tbody>
+            </table>
+
+            <h4 id="language" style="padding-top: 10px; padding-bottom: 10px;">Nyelvtudás</h4>
+            <table>
+                <thead>
+                    <th style="width: 25%;"></th>
+                    <th style="width: auto;"></th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Angol</td>
+                        <td>
+                            <ul> Készségek:
+                                <li>
+                                    aktív társalgási szint és szaknyelvi ismeretek szint írásban és szóban
+                                </li>
+                                <li>
+                                    államilag elismert C típusú középfokú nyelvvizsga
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Olasz</td>
+                        <td>
+                            <ul> Készségek:
+                                <li>
+                                    6 éve nem gyakorolt
+                                </li>
+                                <li>
+                                    államilag elismert C típusú középfokú nyelvvizsga
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Német</td>
+                        <td>
+                            <ul> Készségek:
+                                <li>
+                                    2016 augusztus óta gyakorolt
+                                </li>
+                                <li>
+                                    Alap szint, Kieli Egyetemen végzett kurzus
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+            <h4 id="grants" style="padding-top: 10px; padding-bottom: 10px;">Ösztöndíjak</h4>
+            <table>
+                <thead>
+                    <th style="width: 18%;"></th>
+                    <th style="width: auto;">Hazai</th>
+                    <th >Nemzetközi</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Elnyert ösztöndíjak</td>
+                        <td>
+                            <ul> 
+                                <li>
+                                    Köztársasági ösztöndíj 2015/2016-os tanév
+                                </li>
+                                <li>
+                                    SZTE TALENT Ösztöndíj 2016
+                                </li>
+                                <li>
+                                    Új Nemzeti Kiválósági Program, Doktorandusz ösztöndíj, 2019/ 5 hónap
+                                </li>
+                                <li>
+                                    A tudomány támogatásáért a Dél-Alföldön alapítvány ösztöndíj III. helyezés pályamunkámmal.
+                                </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul> 
+                                <li>
+                                    Német Környezetvédelmi Szövetségi Alapítvány (Deautsche Bundesstiftung Umwelt, DBU) kutató ösztöndíja Németországba, 11 hónap 2016/2017
+                                </li>
+                                <li>
+                                    Német Környezetvédelmi Szövetségi Alapítvány (Deautsche Bundesstiftung Umwelt, DBU) kutatói ösztöndíja Németországba, 3 hónap 2018. Szeptember 1. - November 31.
+                                </li>
+                                <li>
+                                    Német Környezetvédelmi Szövetségi Alapítvány (Deautsche Bundesstiftung Umwelt, DBU) Reisestipendim, 7 nap
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h4 id="it" style="padding-top: 10px; padding-bottom: 10px;">Számításteknikai ismeretek</h4>
+            <table>
+                <thead>
+                    <th style="width: 27%;"></th>
+                    <th style="width: 39%;"></th>
+                    <th style="width: auto;"></th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Felhasználói szintű</td>
+                        <td>
+                            <ul> Microsoft ismeretek
+                                <li>
+                                    MS Word
+                                </li>
+                                <li>
+                                    MS Excel
+                                </li>
+                                <li>
+                                    MS PowerPoint
+                                </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul> Programozási alapismeretek
+                                <li>
+                                    Java
+                                </li>
+                                <li>
+                                    HTML
+                                </li>
+                                <li>
+                                    CSS
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Szoftver ismeretek</td>
+                        <td>
+                            <ul> Geoinformatikai szoftverek
+                                <li>
+                                    ArcGis
+                                </li>
+                                <li>
+                                    QGis
+                                </li>
+                                <li>
+                                    ERDAS Imagine
+                                </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul> Statisztikai szoftverek
+                                <li>
+                                    SPSS
+                                </li>
+                                <li>
+                                    R Statistics
+                                </li>
+                                <li>
+                                    Statgraphics
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
         </div>
 
     </div>
