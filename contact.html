@@ -4,9 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="lib\bootstrap-4.5.0-dist\bootstrap-4.5.0-dist\css\bootstrap.min.css">
     <link rel="stylesheet" href="lib\bootstrap-4.5.0-dist\bootstrap-4.5.0-dist\js\bootstrap.min.js">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
@@ -14,6 +20,17 @@
     <title> Csikós Nándor - Oktatás</title>
     <link rel="icon" href="img\earth.png" type="image/png">
     <link rel="stylesheet" href="css\contact.css">
+
+    <style>
+        /* Set the size of the div element that contains the map */
+        #map {
+            height: 400px;
+            /* The height is 400 pixels */
+            width: 100%;
+            /* The width is the width of the web page */
+        }
+    </style>
+
 </head>
 
 <body>
@@ -39,10 +56,10 @@
                     <a class="nav-link" href="/research.html">Kutatás</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="/teaching.html"><b>Oktatás</b> </a>
+                    <a class="nav-link" href="/teaching.html">Oktatás</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/contact.html">Kapcsolat</a>
+                <li class="nav-item ">
+                    <a class="nav-link active" href="/contact.html"> <b> Kapcsolat</b></a>
                 </li>
 
             </ul>
@@ -60,120 +77,78 @@
     </nav>
     </div>
     <div id="container" style="width: 100%; height: 100%; margin: auto; background-color:#e6f7ff; ">
-        <div style="float: left; width: auto; height: 100%; background-color: lightsteelblue;">
+        <div class="toggle" style="float: left; width: auto; height: 100%; background-color: lightsteelblue;">
             <div class="content" id="content"
                 style="width: 13%; height: 100%; float: left; padding: 1% 0 0 0; position: fixed;background-color: lightsteelblue;">
                 <h4 style="padding:15% 0 0 10%;">
                     Tartalom
-                
+
             </div>
         </div>
-        <div style="width: 73%; margin: auto; height: 100%;">
-            <h3 style="padding: 4% 0 2%;">Oktatott tantárgyak
-            </h3>
-            <h4 id="geoinfo" style="padding: 1% 0 1% 1%; background-color: lightsteelblue;">
-                Geoinformatika alapjai
-            </h4>
-            <section class="mb-4">
+        <div style="width: 73.99%; margin: auto; height: 100%; border-left: solid 2px lightblue;">
+            <div style="padding: 3% 0 0 0 ; width: 100%;">
+                <h3 style="  padding: 1% 0 1% 1%; background-color: lightsteelblue;" >Kapcsolat
+            </h3></div>
+            
 
-                <!--Section heading-->
-                <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
-                <!--Section description-->
-                <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
-                    a matter of hours to help you.</p>
-            
-                <div class="row">
-            
-                    <!--Grid column-->
-                    <div class="col-md-9 mb-md-0 mb-5">
-                        <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-            
-                            <!--Grid row-->
-                            <div class="row">
-            
-                                <!--Grid column-->
-                                <div class="col-md-6">
-                                    <div class="md-form mb-0">
-                                        <input type="text" id="name" name="name" class="form-control">
-                                        <label for="name" class="">Your name</label>
-                                    </div>
-                                </div>
-                                <!--Grid column-->
-            
-                                <!--Grid column-->
-                                <div class="col-md-6">
-                                    <div class="md-form mb-0">
-                                        <input type="text" id="email" name="email" class="form-control">
-                                        <label for="email" class="">Your email</label>
-                                    </div>
-                                </div>
-                                <!--Grid column-->
-            
-                            </div>
-                            <!--Grid row-->
-            
-                            <!--Grid row-->
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="md-form mb-0">
-                                        <input type="text" id="subject" name="subject" class="form-control">
-                                        <label for="subject" class="">Subject</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--Grid row-->
-            
-                            <!--Grid row-->
-                            <div class="row">
-            
-                                <!--Grid column-->
-                                <div class="col-md-12">
-            
-                                    <div class="md-form">
-                                        <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                                        <label for="message">Your message</label>
-                                    </div>
-            
-                                </div>
-                            </div>
-                            <!--Grid row-->
-            
-                        </form>
-            
-                        <div class="text-center text-md-left">
-                            <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
-                        </div>
-                        <div class="status"></div>
-                    </div>
-                    <!--Grid column-->
-            
-                    <!--Grid column-->
-                    <div class="col-md-3 text-center">
-                        <ul class="list-unstyled mb-0">
-                            <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                                <p>San Francisco, CA 94126, USA</p>
-                            </li>
-            
-                            <li><i class="fas fa-phone mt-4 fa-2x"></i>
-                                <p>+ 01 234 567 89</p>
-                            </li>
-            
-                            <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                                <p>contact@mdbootstrap.com</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <!--Grid column-->
-            
-                </div>
-            
-            </section>
-            <!--Section: Contact v.2-->
+            <div style="width: 100%;" >
+                <table style="width: 100%">
+                    <thead>
+                        <th style="width: 33%"></th>
+                        <th style="width: 33%"></th>
+                        <th style="width: 33%"></th>
+                        
+                    </thead>
+                    <tbody>
+                         <tr>
+                        <td style="text-align: center;"><i class="fas fa-map-marker-alt fa-2x"></i>
+                           
+                        </td>
+                        <td style="text-align: center;"><i class="fas fa-phone mt-4 fa-2x"></i>
+                           
+                        </td>
+                        <td style="text-align: center;"><i class="fas fa-envelope mt-4 fa-2x"></i>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p style="text-align: center;">Magyarország, Szeged, Egyetem utca 1. </p>
+                            <p style="text-align: center;">SZTE, TTIK, Természeti Földrajzi és Geoinformatikai Tanszék </p>
+                        </td>
+                        <td>
+                            <p style="text-align: center;">+36 30 844 8869</p>
+                        </td>
+                        <td>
+                           <a href="mailto:csntact@gmail.com"><p style="text-align: center;">csntact@gmail.com</p></a> 
+                           <a href="mailto:csikos@geo.u-szeged.hu"><p style="text-align: center;">csikos@geo.u-szeged.hu</p></a> 
+                        </td>
+                    </tr>
+                    </tbody>
+                   
+                </table>
+            </div>
+
+
+            <div id="mapid">
+                <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=20.135632753372196%2C46.24508175172363%2C20.145674943923954%2C46.25026794357351&amp;layer=mapnik&amp;marker=46.24767490894074%2C20.14065384864807" style="border: 2px solid lightblue; border-left: none;"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=46.24767&amp;mlon=20.14065#map=17/46.24767/20.14065" target="_blank">Megnyitás az OSM oldalán</a></small>            </div>
 
 
 
-            <div class="col-0"></div>
         </div>
+
+
+        </table>
+
+
+
+
+
+
+
+
+        <div class="col-0"></div>
+    </div>
     </div>
 
     <a href="#container" style="position: fixed; bottom: 2%; right: 2%;"><i class="fas fa-arrow-circle-up"
