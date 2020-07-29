@@ -4,11 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="lib\bootstrap-4.5.0-dist\bootstrap-4.5.0-dist\css\bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="lib\bootstrap-4.5.0-dist\bootstrap-4.5.0-dist\js\bootstrap.min.js">
+    <link rel="stylesheet" href="lib\bootstrap-4.5.0-dist\bootstrap-4.5.0-dist\css\bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 
-    <title> Csikós Nándor</title>
+    <title> Csikós Nándor - Életrajz</title>
     <link rel="icon" href="img\earth.png" type="image/png">
     <link rel="stylesheet" href="css\home.css">
 </head>
@@ -24,7 +33,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-left: 40px;">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul id=menu-ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="/index.html"> <b>Életrajz</b> </a>
@@ -57,26 +66,30 @@
     </nav>
     </div>
     <div id="container" style="width: 100%; margin: auto; background-color:#e6f7ff; ">
+        <div style="float: left; width: auto; height: 100%; background-color: lightsteelblue;">
+            <div class="content" id="content"
+                style="width: 13%; height: 100%; float: left; padding: 3% 0 0 2%; position: fixed;background-color: lightsteelblue;">
 
-        <div id="content" style="margin: 10px; float: left; padding: 50px 0px 0px 20px; position: fixed;">
-            <h4>
-                Tartalom
-            </h4>
-            <p><a href="#jobs"> Munkahelyek</a></p>
-            <p><a href="#studies"> Tanulmányok</a></p>
-            <p><a href="#language"> Nyelvtudás</a></p>
-            <p><a href="#grants"> Ösztöndíjak</a></p>
-            <p><a href="#it"> IT ismeretek</a></p>
+                <h4>
+                    Tartalom
+                </h4>
+                <p><a href="#jobs"> Munkahelyek</a></p>
+                <p><a href="#studies"> Tanulmányok</a></p>
+                <p><a href="#language"> Nyelvtudás</a></p>
+                <p><a href="#grants"> Ösztöndíjak</a></p>
+                <p><a href="#it"> IT ismeretek</a></p>
 
+            </div>
         </div>
-        <div
-            style=" margin: 0px 200px 10px 200px; padding: 50px 0px 0px 10px;background-color: #e6f7ff;border-left: solid lightblue;">
-            <div style="padding: 15px; float: right; background-color: lightsteelblue; box-shadow:5px 4px lightgrey;">
+
+        <div style=" margin: 0 13% 0 13%; padding: 0 0 0 0;background-color: #e6f7ff;border-left: solid lightblue;">
+            <div
+                style="padding: 2%;margin-top: 5%; float: right; background-color: lightsteelblue; box-shadow:5px 4px lightgrey;">
                 <img src="img\profil1.jpg" alt="profil" width="150px">
             </div>
 
-            <h3 id="cv" style="padding-bottom: 20px;">Szakmai önéletrajz</h3>
-            <h4 id="jobs" style="padding: 10px 0px 10px 10px; background-color: lightsteelblue;">Munkahelyek</h4>
+            <h3 id="cv" style="padding: 4% 0 2% 1%;">Szakmai önéletrajz</h3>
+            <h4 id="jobs" style="padding: 1% 0 1% 1%; background-color: lightsteelblue;">Munkahelyek</h4>
 
             <table>
                 <thead>
@@ -124,11 +137,11 @@
 
             </table>
 
-            <h4 id="studies" style="padding: 10px 0px 10px 10px; background-color: lightsteelblue;">Felsőfokú
+            <h4 id="studies" style="padding: 1% 0 1% 1%; background-color: lightsteelblue;">Felsőfokú
                 tanulmányok</h4>
             <table>
                 <thead>
-                    <th style="width: 27%;"></th>
+                    <th style="width: 25%;"></th>
                     <th style="width: auto;"></th>
                 </thead>
                 <tbody>
@@ -145,7 +158,7 @@
                 </tbody>
             </table>
 
-            <h4 id="language" style="padding: 10px 0px 10px 10px; background-color: lightsteelblue;">Nyelvtudás</h4>
+            <h4 id="language" style="padding: 1% 0 1% 1%; background-color: lightsteelblue;">Nyelvtudás</h4>
             <table>
                 <thead>
                     <th style="width: 25%;"></th>
@@ -194,7 +207,7 @@
 
                 </tbody>
             </table>
-            <h4 id="grants" style="padding: 10px 0px 10px 10px; background-color: lightsteelblue;">Ösztöndíjak</h4>
+            <h4 id="grants" style="padding: 1% 0 1% 1%; background-color: lightsteelblue;">Ösztöndíjak</h4>
             <table>
                 <thead>
                     <th style="width: 18%;"></th>
@@ -240,7 +253,7 @@
                     </tr>
                 </tbody>
             </table>
-            <h4 id="it" style="padding: 10px 0px 10px 10px; background-color: lightsteelblue;">Számításteknikai
+            <h4 id="it" style="padding: 1% 0 1% 1%; background-color: lightsteelblue;">Számításteknikai
                 ismeretek</h4>
             <table>
                 <thead>
@@ -309,11 +322,12 @@
                     </tr>
                 </tbody>
             </table>
-        <a href="#container" style="position: fixed; bottom: 2%; right: 2%;"><i class="fas fa-arrow-circle-up" style="font-size: 30px; color: lightseagreen;"></i>
-        </a>
-    </div>
+            <a href="#container" style="position: fixed; bottom: 2%; right: 2%;"><i class="fas fa-arrow-circle-up"
+                    style="font-size: 40px; color: lightsteelblue;"></i>
+            </a>
+        </div>
 
-        
+
     </div>
 
 
